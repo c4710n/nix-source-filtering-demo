@@ -4,10 +4,10 @@
 echo 'A_TRUTH="This world is virtual."' > secret.env
 
 nix build .# \
+    && echo "" \
     && ls -al result/ \
     && echo "
-
-Is "secret.env" included in above output?
+Is 'secret.env' included in above output?
 + yes - everything's fine.
 + no - something's wrong.
 "

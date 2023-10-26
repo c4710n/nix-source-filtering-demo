@@ -18,6 +18,7 @@
           pname = "nix-source-filtering-demo";
           version = "0.1.0";
 
+          # lib.sources.trace is for debugging
           src = lib.sources.trace (nix-gitignore.gitignoreSource [
             "flake.nix"
             "flake.lock"
